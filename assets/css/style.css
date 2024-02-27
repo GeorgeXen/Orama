@@ -249,70 +249,94 @@ header {
   width: 100%;
   z-index: 999;
   color: #FFF; }
+
   header .header-top {
     padding: 20px; }
+
     @media screen and (max-width: 767px) {
       header .header-top {
         padding: 10px; } }
+
     header .header-top .mail-detail {
       padding-top: 15px; }
+
       header .header-top .mail-detail ul li {
         font-size: .85rem;
         font-weight: 600;
         padding: 3px; }
+
     header .header-top .logo {
       text-align: center; }
+
       @media screen and (max-width: 767px) {
         header .header-top .logo {
           text-align: left; }
+
           header .header-top .logo img {
             max-width: 180px; } }
+
     header .header-top .social-link {
       padding-top: 15px; }
+
       header .header-top .social-link ul {
         float: right; }
+
         header .header-top .social-link ul li {
           float: left;
           padding: 10px 15px; }
+
           header .header-top .social-link ul li i {
             font-size: 1.5rem; }
+
   header .header-nav .nav-row {
     padding: 10px;
     border-top: 1px solid #CCC;
     border-bottom: 1px solid #CCC; }
+
     @media screen and (max-width: 767px) {
       header .header-nav .nav-row {
         background-color: #FFF;
         margin-top: -10px; }
+
         header .header-nav .nav-row ul {
           margin-left: 0px;
           width: 100%; }
+
           header .header-nav .nav-row ul li {
             float: none;
             width: 100%; }
+
             header .header-nav .nav-row ul li a {
               color: #444; } }
+
   header .header-nav ul {
     float: none;
     margin: auto; }
+
     header .header-nav ul li {
       float: left;
       padding: 10px 30px; }
+
       @media screen and (max-width: 991px) {
         header .header-nav ul li {
           padding: 10px 25px; } }
+
       header .header-nav ul li a {
         color: #fff;
         font-weight: 600;
         font-size: .9rem;
         text-transform: uppercase; }
+
   header .scroll-to-fixed-fixed {
     background-color: #FFF;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
     header .scroll-to-fixed-fixed .nav-row {
       border: 0px !important; }
+
     header .scroll-to-fixed-fixed ul li a {
       color: #444; }
+
   header .small-menu {
     float: right;
     color: #FFF;
@@ -321,10 +345,46 @@ header {
     right: 13px;
     top: 10px; }
 
+/* General style for navbar links with transition */
+header .header-nav ul li a {
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Navbar selections hover color */
+header .header-nav ul li a:hover {
+  color: #e4e325; /* Desired hover color */
+}
+
+/* Facebook Icon Hover Color */
+header .header-top .social-link ul li a[href*="facebook.com"]:hover i {
+  color: #4267B2; /* Facebook Blue */
+}
+
+/* LinkedIn Icon Hover Color */
+header .header-top .social-link ul li a[href*="linkedin.com"]:hover i {
+  color: #0077B5; /* LinkedIn Blue */
+}
+
+/* TikTok Icon Hover Color */
+header .header-top .social-link ul li a[href*="tiktok.com"]:hover i {
+  color: #000000; /* TikTok Black (or any color you prefer) */
+}
+
+/* Instagram Icon Hover Color */
+header .header-top .social-link ul li a[href*="instagram.com"]:hover i {
+  color: #C13584; /* Instagram Gradient Primary (or any color you prefer) */
+}
+
+header .header-top .social-link ul li a i {
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
 /* =================== Slider Style Starts Here =================== */
 @media screen and (max-width: 992px) {
+  .customer-serv .carousel-control-prev,
   .slider-detail .carousel-control-prev {
     padding-top: 50px; }
+  
   .slider-detail .carousel-control-next {
     padding-top: 50px; }
   .slider-detail .container {
@@ -335,47 +395,60 @@ header {
   @media screen and (max-width: 1260px) {
     .slider-detail .carousel-caption {
       bottom: 30px; } }
+
   @media screen and (max-width: 1044px) {
     .slider-detail .carousel-caption h5 {
       font-size: 28px !important; }
+
     .slider-detail .carousel-caption p {
       margin-top: 20px !important; } }
+
   @media screen and (max-width: 991px) {
     .slider-detail .carousel-caption {
       bottom: 10px;
       display: none !important; }
+
       .slider-detail .carousel-caption h5 {
         font-size: 28px;
         color: #fff; }
+
       .slider-detail .carousel-caption .btn {
         padding: 10px !important;
         font-size: 1rem !important;
         margin-top: 7px !important; } }
+
   @media screen and (max-width: 800px) {
     .slider-detail .carousel-caption h5 {
       font-size: 18px; } }
+
   .slider-detail .carousel-caption h5 {
     font-size: 44px;
     margin-left: -40px;
     font-weight: 600;
     color: #fff; }
+
   .slider-detail .carousel-caption p {
     margin-left: -40px;
     font-weight: 500;
     margin-top: 40px;
     font-size: 16px;
-    color: #fff; }
+    color: #ffffff; }
+
 .slider-detail .vbh {
   margin-left: -40px; }
+
   .slider-detail .vbh .btn {
     padding: 10px 30px;
     margin-top: 40px;
     font-weight: 600;
     font-size: 18px; }
+
 .slider-detail .vdg-cur {
   color: #ffffff; }
+
 .slider-detail .fvgb {
   color: #ffffff; }
+
 
 /* =================== Destination Style Starts Here =================== */
 .destinations {
@@ -478,18 +551,23 @@ header {
   padding: 45px;
   background-color: #fdfdfd;
   padding-bottom: 120px; }
+
   @media screen and (max-width: 554px) {
     .customer-serv {
       padding: 40px 20px; } }
+
   @media screen and (max-width: 1063px) {
     .customer-serv {
       padding: 40px 20px; } }
+
   @media screen and (max-width: 348px) {
     .customer-serv {
       padding: 30px 10px !important; } }
+
   .customer-serv .ro-clo {
     padding: 40px 0px;
     padding-top: 25px; }
+
   .customer-serv .card-b::after {
     box-sizing: border-box;
     background-color: #FFF;
@@ -501,6 +579,7 @@ header {
     top: 108px;
     transform: rotate(135deg);
     width: 25px; }
+
   .customer-serv .card-b {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     padding: 20px;
@@ -514,69 +593,114 @@ header {
     background-color: #FFF;
     background-size: 40px;
     background-position: right 10px bottom 5px; }
+
     .customer-serv .card-b p {
       font-size: .95rem; }
+
   .customer-serv .an-mtc {
     padding-top: 23px; }
+
   .customer-serv .stars {
     padding-top: 33px; }
+
     .customer-serv .stars li {
       list-style: none;
       color: #f8b739;
       float: right;
       font-size: 13px;
       margin-left: 4px; }
+
   .customer-serv .img-circl {
     margin-top: 20px;
     text-align: center; }
+
   .customer-serv .img-circl img {
     width: 80%;
     border-radius: 50%; }
+
   .customer-serv .star-par {
     padding-left: 0px; }
+
   @media screen and (max-width: 1013px) {
     .customer-serv .stars li {
       font-size: 12px; } }
+
   @media screen and (max-width: 991px) {
     .customer-serv .card-b::after {
       display: none;
       margin-top: 20px; }
+      
     .customer-serv .col-12 {
       margin-top: 20px; } }
 
 /* =================== Our Team Starts Here =================== */
 .our-team {
   padding: 50px; }
+
   @media screen and (max-width: 450px) {
     .our-team {
       padding: 30px 10px; } }
+
   .our-team .content-title h2 {
     margin-bottom: 50px; }
+
   .our-team .team-member {
     padding: 10px;
     background-color: #FFF;
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     border-radius: 2px;
     text-align: center; }
+
     @media screen and (max-width: 767px) {
       .our-team .team-member {
         margin-bottom: 15px; } }
+
     .our-team .team-member img {
       margin-bottom: 5px; }
+
     .our-team .team-member p {
       margin-top: 5px;
       font-size: .85rem; }
+
     .our-team .team-member b {
       padding: 5px; }
+
     .our-team .team-member ul li {
-      float: left;
+      display: inline-block; /* Display list items inline-block for horizontal layout */
       padding: 5px;
-      width: 20%;
       text-align: center;
-      border: 1px solid #efefefa6; }
+      border: 1px solid #efefefa6;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+      
     .our-team .team-member ul {
-      margin: 0px;
-      margin-top: 10px; }
+      list-style: none;
+      padding: 0;
+      margin: 10px auto;
+      display: table; /* Use display: table for centering */
+    }
+
+    /* Hover effects for social media icons */
+    .our-team .team-member ul li a {
+      transition: color 0.3s ease; /* Smooth transition for color change */
+    }
+
+    /* Facebook hover effect */
+    .our-team .team-member ul li a[href*="facebook.com"]:hover {
+      color: #3b5998; /* Facebook Blue */
+    }
+
+    /* Instagram hover effect */
+    .our-team .team-member ul li a[href*="instagram.com"]:hover {
+      color: #E1306C; /* Instagram Gradient Start Color for simplicity */
+    }
+
+    /* LinkedIn hover effect */
+    .our-team .team-member ul li a[href*="linkedin.com"]:hover {
+      color: #0077b5; /* LinkedIn Blue */
+    }
+
 
 /* =================== Blog Style Starts Here =================== */
 .blog {

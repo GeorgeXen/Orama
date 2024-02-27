@@ -33,6 +33,16 @@
     text-align: center; /* Center-aligns the title */
 }
 
+.blog-entry img {
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-bottom: 15px; /* Keeps the bottom margin for spacing */
+    max-width: 80%; /* Adjusts the image width */
+    height: auto; /* Maintains the image's aspect ratio */
+    border-radius: 5px; /* Optional: Adds rounded corners to the image */
+}
+
+
 .blog-entry p {
     text-align: justify;
     width: 100%; /* Ensures paragraph uses full available width */
