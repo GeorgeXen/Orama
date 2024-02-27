@@ -352,7 +352,7 @@ header .header-nav ul li a {
 
 /* Navbar selections hover color */
 header .header-nav ul li a:hover {
-  color: #e4e325; /* Desired hover color */
+  color: #e4e325 !important;
 }
 
 /* Facebook Icon Hover Color */
@@ -706,30 +706,52 @@ header .header-top .social-link ul li a i {
 .blog {
   background-color: #f7f7f7;
   padding: 50px; }
+  
   @media screen and (max-width: 940px) {
     .blog {
       padding: 30px 10px; } }
+
   .blog .blog-row .blog-col {
     background-color: #fff;
     padding: 15px;
     box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35);
     margin-bottom: 30px; }
+
     .blog .blog-row .blog-col img {
       margin-bottom: 20px;
       width: 100%; }
+
     .blog .blog-row .blog-col span {
       color: #a09f9f;
       font-size: .83rem; }
+
     .blog .blog-row .blog-col h4 {
       margin-top: 15px;
       font-weight: 600;
       font-size: 1.2rem;
       margin-bottom: 15px;
       line-height: 26px; }
+
     .blog .blog-row .blog-col p {
       font-weight: 500;
       font-size: .93rem;
       line-height: 25px; }
+
+      .blog .blog-row .blog-link {
+        text-decoration: none;
+        color: inherit; /* To ensure the text color does not change */
+      }
+      
+      .blog .blog-row .blog-col {
+        transition: transform 0.5s ease, box-shadow 0.5s ease; /* Increase transition time to 0.5s */
+      }
+      
+      .blog .blog-row .blog-link:hover .blog-col {
+        transform: translateY(-5px); /* Move the card up slightly on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a larger shadow to lift the card visually */
+        cursor: pointer;
+      }
+      
 
 /* ===================================== Footer Cover Style  ================================== */
 .footer-ablove {
