@@ -840,6 +840,71 @@ footer .tags ul li {
     font-size: 1.2rem;
     margin-bottom: 20px; }
 
+    /*========================= Social Media footer css================ */
+    .social-media .social-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .social-media .social-icons .social-icon {
+      display: inline-block;
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background-color: #fff; /* Default background to match the icon's background */
+      margin: 10px 0;
+      border-radius: 3px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: all 0.5s ease;
+  }
+  
+  .social-media .social-icons .social-icon i {
+      color: #fff; /* Icon color */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.5s ease;
+  }
+  
+  .social-media .social-icons .social-icon span {
+      display: none; /* Initially hidden */
+      position: absolute;
+      width: 0;
+      height: 100%;
+      top: 0;
+      left: 50px; /* Starting position */
+      background-color: transparent;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      transition: width 0.5s ease, background-color 0.5s ease;
+  }
+  
+  /* Background colors for each social media icon */
+  .social-media .social-icon.facebook { background-color: #3b5998; }
+  .social-media .social-icon.instagram { background-color: #C13584; }
+  .social-media .social-icon.linkedin { background-color: #0077b5; }
+  .social-media .social-icon.tiktok { background-color: #000000; }
+  
+  /* Hover effects */
+  .social-media .social-icons .social-icon:hover {
+      width: 230px; /* Expanded width */
+  }
+  
+  .social-media .social-icons .social-icon:hover i {
+      left: 30px; /* Move icon to the left */
+  }
+  
+  .social-media .social-icons .social-icon:hover span {
+      display: flex;
+      width: 180px; /* Expanded width to show text */
+      left: 50px; /* Adjust if needed based on icon size */
+      background-color: inherit; /* Use the background color of the parent */
+  }
+  
+    
 /* ===================================== Gallery Style  ================================== */
 .gallery-filter {
   width: 100%;
