@@ -823,9 +823,13 @@ footer .tags ul li {
   background-color: #191616;
   color: #FFF; }
 
-.copy a {
-  color: #FFF;
-  font-size: .85rem; }
+  .copy a {
+    color: #FFF;
+    font-size: .85rem; 
+    justify-content: center;    
+    display: flex;
+  
+  }
 
 .copy span {
   float: right; }
