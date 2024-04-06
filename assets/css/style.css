@@ -460,6 +460,7 @@ header .header-top .social-link ul li a i {
   .destinations .dest-row {
     margin-top: 20px; }
     .destinations .dest-row .dest-col {
+      padding-bottom: 30px; /* Add desired padding at the bottom */
       text-align: center; }
       .destinations .dest-row .dest-col .dest-img {
         padding: 10px;
