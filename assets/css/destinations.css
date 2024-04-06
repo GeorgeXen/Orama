@@ -50,3 +50,26 @@
     max-width: 800px; /* Limits max width for readability on larger screens */
     margin: auto; /* Centers the paragraph in the container */
 }
+
+/* Apply button CSS */
+
+.apply-now {
+    min-width: 200px; /* Adjust the width as needed */
+    padding: 10px 30px; /* Adjust padding for taller appearance, if desired */
+    font-size: 16px; /* Optional: Adjust font size for better visual compatibility with the new button size */
+    display: inline-block; /* Ensures the width adjustment takes effect */
+    text-align: center; /* Ensures the text is centered within the button */
+}
+
+.btn-outline-success:hover {
+    color: #28a745;
+    background-color: transparent;
+    background-image: none;
+    border-color: #28a745;
+}
+
+.btn-outline-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
