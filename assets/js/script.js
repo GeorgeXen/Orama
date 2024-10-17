@@ -120,4 +120,16 @@ $(document).ready(function() {
     // Include other initialization scripts here
 });
 
+function openModal(src) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    modal.style.display = "block";
+    modalImg.src = src;
+    captionText.innerHTML = src.split('/').pop(); // Optional: Show filename as caption
 
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+}
